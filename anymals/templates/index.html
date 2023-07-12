@@ -1,0 +1,763 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Animals</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/themify-icons.css">
+    <link rel="stylesheet" href="../static/css/nice-select.css">
+    <link rel="stylesheet" href="../static/css/flaticon.css">
+    <link rel="stylesheet" href="../static/css/gijgo.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/slicknav.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- <link rel="stylesheet" href="../static/css/responsive.css"> -->
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<header>
+    <div class="header-area ">
+        <div class="header-top_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="short_contact_list">
+                            <ul>
+                                <li><a href="#">+37128804740</a></li>
+                                <li><a href="#">Mon - Sat 10:00 - 7:00</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 ">
+                        <div class="social_media_links">
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-pinterest-p"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="sticky-header" class="main-header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="logo">
+                            <a href="{% url 'anymals_config:index' %}">
+                                <img src="../static/img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a href="{% url 'anymals_config:index' %}">Home</a></li>
+                                    <li><a href="{% url 'anymals_config:cost' %}">Cost</a></li>
+
+                                    <li><a href="{% url 'anymals_config:news' %}">News, promotions</a></li>
+
+                                    <li><a href="{% url 'anymals_config:contact' %}">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- slider_area_start -->
+<div class="slider_area">
+    <div class="single_slider slider_bg_1 d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <div class="slider_text">
+                        <h3>We worry <br> <span>about your animals</span></h3>
+                        <a href="{% url 'anymals_config:contact' %}" class="boxed-btn4">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dog_thumb d-none d-lg-block">
+            <img src="../static/img/banner/dog.png" alt="">
+        </div>
+    </div>
+</div>
+<!-- slider_area_end -->
+
+<!-- service_area_start  -->
+<div class="service_area">
+    <div class="container">
+        <div class="row justify-content-center ">
+            <div class="col-lg-7 col-md-10">
+                <div class="section_title text-center mb-95">
+                    <h3>Services for every dog</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service">
+                    <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
+                        <div class="service_icon">
+                            <img src="../static/img/service/service_icon_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="service_content text-center">
+                        <h3>Pet Boarding</h3>
+                      <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service active">
+                    <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
+                        <div class="service_icon">
+                            <img src="../static/img/service/service_icon_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="service_content text-center">
+                        <h3>Healthy Meals</h3>
+                        <p><p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service">
+                    <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
+                        <div class="service_icon">
+                            <img src="../static/img/service/service_icon_3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="service_content text-center">
+                        <h3>Pet Spa</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- service_area_end -->
+
+<!-- pet_care_area_start  -->
+<div class="pet_care_area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="pet_thumb">
+                    <img src="../static/img/about/pet_care.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 col-md-6">
+                <div class="pet_info">
+                    <div class="section_title">
+                        <h3><span>We care your pet </span> <br>
+                            As you care</h3>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+
+    <div class="HT5ybB">
+
+        <div id="Containervt8vg" class="Containervt8vg SPY_vo">
+
+            <div data-mesh-id="Containervt8vginlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="Containervt8vginlineContent-gridContainer" data-testid="mesh-container-content">
+                    <div id="comp-kd8pc6pl" class="KcpHeO tz5f0K comp-kd8pc6pl wixui-rich-text"
+                         data-testid="richTextElement"><h1 class="font_0"
+                                                           style="font-size:60px; line-height:normal; text-align:center;">
+                        <span style="font-weight:bold;"><span style="color:#5A2B1C;"><span
+                                style="letter-spacing:0.02em;"><span
+                                style="font-size:60px;">ABOUT US</span></span></span></span></h1>
+
+                    </div>
+                 <div class="contact">
+
+                        <div id="comp-kd8pnz33" class="KcpHeO tz5f0K comp-kd8pnz33 wixui-rich-text"
+                         data-testid="richTextElement" data-angle="0" data-angle-style-location="style"
+                         style="visibility: inherit;" data-screen-in-hide="done"><p class="font_8"
+                                                                                    style="font-size:39px;"><span
+                            style="font-size:39px;"><span class="color_19"><span
+                            style="font-weight:bold;">Who are we?</span></span></span></p>
+
+
+
+
+                          <div id="comp-kw22ihsk" class="MazNVa comp-kw22ihsk wixui-image" data-angle="0"
+                         data-angle-style-location="style" style="visibility: inherit;" data-screen-in-hide="done">
+                        <div data-testid="linkElement" class="j7pOnl">
+                            <wow-image id="img_comp-kw22ihsk" class="HlRz5e BI8PVQ"
+                                       data-image-info="{&quot;containerId&quot;:&quot;comp-kw22ihsk&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:326,&quot;targetHeight&quot;:250,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:1151,&quot;height&quot;:884,&quot;uri&quot;:&quot;2a0f46_ffc2feadb84d4116b048c5a0a03d9acd~mv2.jpg&quot;,&quot;name&quot;:&quot;IMG_6419.JPG.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
+                                       data-bg-effect-name="" data-has-ssr-src=""
+                                       data-src="https://static.wixstatic.com/media/2a0f46_ffc2feadb84d4116b048c5a0a03d9acd~mv2.jpg/v1/fill/w_326,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_6419_JPG.jpg">
+                                <img src="https://static.wixstatic.com/media/2a0f46_ffc2feadb84d4116b048c5a0a03d9acd~mv2.jpg/v1/fill/w_326,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_6419_JPG.jpg"
+                                     alt="IMG_6419.JPG.jpg" style="width:326px;height:250px;object-fit:cover"
+                                     srcset="https://static.wixstatic.com/media/2a0f46_ffc2feadb84d4116b048c5a0a03d9acd~mv2.jpg/v1/fill/w_326,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_6419_JPG.jpg 1x, https://static.wixstatic.com/media/2a0f46_ffc2feadb84d4116b048c5a0a03d9acd~mv2.jpg/v1/fill/w_652,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_6419_JPG.jpg 2x"
+                                     fetchpriority="high"></wow-image>
+
+                        </div>
+                               <a class="titles">LPH</a><br>
+                            <a class="titles_descripthion"> - THE WORLD OF STYLISH DESIGN AND HOME COMFORT FOR ANIMALS -</a>
+                    </div>
+
+
+
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">We decided to participate in the junior achievement project and created our own SMU with the name "LPH" (Lovely Pet’s Houses ). This is our first experience, but we are very motivated and want to achieve success. Why animal houses? We don't even know. We just started thinking about what we could do ourselves, what kind of business we could open and came to the conclusion that we both love animals. Then we started thinking how can we distinguish ourselves from the competition?</span></span></span>
+                        </p>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <p class="font_8" style="font-size:39px;"><span style="font-size:39px;"><span
+                                class="color_19"><span
+                                style="font-weight:bold;">Why this particular design?</span></span></span></p>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                        style="font-weight:bold;"><span class="color_19">It is stylish, fashionable, modern and suitable for any design of any apartment or private house</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                style="font-weight:bold;"><span class="color_19">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                        style="font-weight:bold;"><span class="color_19">It is eco-friendly, as the houses are made of wood</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                style="font-weight:bold;"><span class="color_19">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                        style="font-weight:bold;"><span class="color_19">You will not find such a design of houses in a regular Zoo store - our houses are competitive</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                style="font-weight:bold;"><span class="color_19">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                        style="font-weight:bold;"><span class="color_19">Each house is filled with its own idea and the design is matched to the functionality of the house</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <p class="font_8" style="font-size:37px;"><span style="font-size:37px;"><span
+                                class="color_19"><span style="font-weight:bold;">Why do you need to choose our company LPH?</span></span></span>
+                        </p>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                        style="font-weight:bold;"><span style="font-size:18px;">The house will fill your home with comfort and beauty</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                style="font-weight:bold;"><span style="font-size:18px;">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                        style="font-weight:bold;"><span style="font-size:18px;">You will please yourself and your pet</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                style="font-weight:bold;"><span style="font-size:18px;">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                        style="font-weight:bold;"><span style="font-size:18px;">You will be different from others having such a house, as all houses are special and designer</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                style="font-weight:bold;"><span style="font-size:18px;">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                        style="font-weight:bold;"><span style="font-size:18px;">We are a start-up business, so you can support us in our endeavors)))))</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:35px;"><span style="font-size:35px;"><span
+                                class="wixGuard">​</span></span></p>
+
+                        <p class="font_8" style="font-size:35px;"><span style="font-size:35px;"><span
+                                class="color_19"><span style="font-weight:bold;">How will we help society if we manage to realize our business and people will buy our houses?</span></span></span>
+                        </p>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                        style="font-weight:bold;"><span style="font-size:18px;">From the remaining materials we will make houses for stray cats and dogs</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                style="font-weight:bold;"><span style="font-size:18px;">&nbsp;</span></span></span></p>
+
+                        <ul class="font_8 color_19" style="font-size:18px; font-weight:bold;">
+                            <li>
+                                <p class="font_8" style="font-size:18px;"><span class="color_19"><span
+                                        style="font-weight:bold;"><span style="font-size:18px;">So buy our houses and contribute your help to stray cats and dogs!!!</span></span></span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:18px;"><span
+                                class="color_19"><span style="font-weight:bold;">&nbsp;</span></span></span></p>
+
+                        <p class="font_8" style="font-size:18px;"><span style="font-size:37px;"><span
+                                class="color_19"><span
+                                style="font-weight:bold;"></span></span></span></p>
+
+                        <p class="font_8" style="font-size:18px;">&nbsp;</p>
+
+                        </div>
+                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div id="comp-kd8px2uo" class="KcpHeO tz5f0K comp-kd8px2uo wixui-rich-text"
+                         data-testid="richTextElement"><h2 class="font_2"
+                                                           style="line-height:1.2em; text-align:center; font-size:40px;">
+                        <span style="font-size:60px;"><span style="font-size:59px;"><span style="font-size:60px;"><span
+                                style="font-size:61px;"><span style="font-size:62px;"><span
+                                style="font-size:63px;"><span style="font-size:63px;"><span
+                                style="font-size:64px;"><span style="font-size:63px;"><span
+                                style="font-size:62px;"><span style="font-size:61px;"><span
+                                style="font-size:60px;"><span style="font-size:59px;"><span
+                                style="font-size:58px;"><span style="font-size:57px;"><span
+                                style="font-size:56px;"><span style="font-size:55px;"><span
+                                style="font-size:54px;"><span style="font-size:53px;"><span
+                                style="font-size:51px;"><span style="font-size:50px;"><span
+                                style="font-size:50px;"><span style="font-size:49px;"><span
+                                style="font-size:48px;"><span style="font-size:47px;"><span
+                                style="font-size:46px;"><span style="font-size:46px;"><span
+                                style="font-size:45px;"><span style="font-size:43px;"><span
+                                style="font-size:42px;"><span style="font-weight:bold;"><span class="color_19"><span
+                                style="letter-spacing:0.02em;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+                    </h2></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- pet_care_area_end  -->
+
+<!-- adapt_area_start  -->
+<div class="adapt_area">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-5">
+                <div class="adapt_help">
+                    <div class="section_title">
+                        <h3><span>We need your</span>
+                            help Adopt Us</h3>
+
+                        <a href="{% url 'anymals_config:contact' %}" class="boxed-btn3">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="adapt_about">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single_adapt text-center">
+                                <img src="../static/img/adapt_icon/1.png" alt="">
+                                <div class="adapt_content">
+                                    <h3 class="counter">452</h3>
+                                    <p>Pets Available</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single_adapt text-center">
+                                <img src="../static/img/adapt_icon/3.png" alt="">
+                                <div class="adapt_content">
+                                    <h3><span class="counter">52</span>+</h3>
+                                    <p>Pets Available</p>
+                                </div>
+                            </div>
+                            <div class="single_adapt text-center">
+                                <img src="../static/img/adapt_icon/2.png" alt="">
+                                <div class="adapt_content">
+                                    <h3><span class="counter">52</span>+</h3>
+                                    <p>Pets Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- adapt_area_end  -->
+
+<!-- testmonial_area_start  -->
+<div class="testmonial_area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="textmonial_active owl-carousel">
+
+                    <div class="testmonial_wrap">
+                        <div class="single_testmonial d-flex align-items-center">
+                            <div class="test_thumb">
+                                <img src="../static/img/team/IMG_6432_PNG.png" alt="">
+                            </div>
+                            <div class="test_content">
+                                <h4>Alisa Proshchinko</h4>
+                                <span>Director assistant</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testmonial_wrap">
+                        <div class="single_testmonial d-flex align-items-center">
+                            <div class="test_thumb">
+                                <img src="../static/img/team/IMG_6415_JPG.png" alt="">
+                            </div>
+                            <div class="test_content">
+
+                                <h4>Daniela Gilmanova</h4>
+                                <span>Director</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- testmonial_area_end  -->
+
+<!-- team_area_start  -->
+<div class="team_area">
+    <div class="container">
+        <div class="row justify-content-center ">
+            <div class="col-lg-6 col-md-10">
+                <div class="section_title text-center mb-95">
+                    <h3>Our Team</h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="single_team">
+                    <div class="thumb">
+                        <img src="../static/img/team/IMG_6415_JPG.png" alt="">
+                    </div>
+                    <div class="member_name text-center">
+                        <div class="mamber_inner">
+                            <h4>Daniela Gilmanova</h4>
+                            <p>Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_team">
+                    <div class="thumb">
+                        <img src="../static/img/team/IMG_6432_PNG.png" alt="">
+                    </div>
+                    <div class="member_name text-center">
+                        <div class="mamber_inner">
+                            <h4>Alisa Proshchinko</h4>
+                            <p>Director assistant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_team">
+                    <div class="thumb">
+
+                    </div>
+                    <div class="member_name text-center">
+                        <div class="mamber_inner">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- team_area_start  -->
+
+<div class="contact_anipat anipat_bg_1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact_text text-center">
+                    <div class="section_title text-center">
+                        <h3>Why go with Anymals?</h3>
+                        <p>Because we know that even the best technology is only as good as the people behind it. 24/7
+                            tech support.</p>
+                    </div>
+                    <div class="contact_btn d-flex align-items-center justify-content-center">
+                        <a href="{% url 'anymals_config:contact' %}" class="boxed-btn4">Contact Us</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer_start  -->
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Contact Us
+                        </h3>
+                        <ul class="address_line">
+                            <li>
+                                Do you have any questions for us?
+                            </li>
+                            <li><a href="#">Then write to <br> us by e-mail :</a></li>
+                            <li> lovelypets<br>houses@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Our Servces
+                        </h3>
+                        <ul class="links">
+
+                            <li><a href="{% url 'anymals_config:index' %}">Home</a></li>
+                            <li><a href="{% url 'anymals_config:cost' %}">Cost</a></li>
+
+                            <li><a href="{% url 'anymals_config:news' %}">News, promotions</a></li>
+                            <li><a href="service.html">Reviews</a></li>
+                            <li><a href="{% url 'anymals_config:contact' %}">Contact</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-lg-3 ">
+                    <div class="footer_widget">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="../static/img/logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-pinterest"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="bordered_1px"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by
+                        <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer_end  -->
+
+
+<!-- JS here -->
+<script src="../static/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="../static/js/popper.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/isotope.pkgd.min.js"></script>
+<script src="../static/js/ajax-form.js"></script>
+<script src="../static/js/waypoints.min.js"></script>
+<script src="../static/js/jquery.counterup.min.js"></script>
+<script src="../static/js/imagesloaded.pkgd.min.js"></script>
+<script src="../static/js/scrollIt.js"></script>
+<script src="../static/js/jquery.scrollUp.min.js"></script>
+<script src="../static/js/wow.min.js"></script>
+<script src="../static/js/nice-select.min.js"></script>
+<script src="../static/js/jquery.slicknav.min.js"></script>
+<script src="../static/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/plugins.js"></script>
+<script src="../static/js/gijgo.min.js"></script>
+
+<!--contact js-->
+<script src="../static/js/contact.js"></script>
+<script src="../static/js/jquery.ajaxchimp.min.js"></script>
+<script src="../static/js/jquery.form.js"></script>
+<script src="../static/js/jquery.validate.min.js"></script>
+<script src="../static/js/mail-script.js"></script>
+
+<script src="../static/js/main.js"></script>
+<script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            disableDaysOfWeek: [0, 0],
+        //     icons: {
+        //      rightIcon: '<span class="fa fa-caret-down"></span>'
+        //  }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+
+        });
+        var timepicker = $('#timepicker').timepicker({
+         format: 'HH.MM'
+     });
+
+</script>
+</body>
+
+</html>
