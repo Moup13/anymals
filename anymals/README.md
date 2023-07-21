@@ -1,5 +1,8 @@
-
- <p><center>Anymals </center></p>
+<p align="center">
+    <a target="_blank" rel="noopener noreferrer">
+    "Anymals"   
+    </a>
+</p>
 
 Данный проект написан на фрэймворке Django.
 
