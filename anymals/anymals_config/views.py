@@ -35,24 +35,6 @@ def cost_products(request):
     return render(request, 'cost.html', context)
 
 
-# def reviews(request,id):
-#     posted_rewiews = Reviews.objects.get(id=id)
-#
-#     if requests.method == "POST":
-#         form = ReviewForm(request.POST or None)
-#         if form.is_valid():
-#             data = form.save(commit=False)
-#             data.email = request.POST.get('email')
-#             data.name = request.POST.get('name')
-#             data.message= request.POST.get('message')
-#             data.save()
-#             return redirect('/')
-#
-#     else:
-#         form = ReviewForm()
-#     return render(request, 'reviews.html.html', {'form': form,'posted_rewiews':posted_rewiews})
-
-
 def contact(requests):
     return render(requests, 'contact.html')
 
