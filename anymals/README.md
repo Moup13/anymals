@@ -1,5 +1,5 @@
 
-"Anymals".
+ <p><center>Anymals </center></p>
 
 Данный проект написан на фрэймворке Django.
 
